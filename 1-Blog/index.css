@@ -1,0 +1,75 @@
+body {
+    background-image: linear-gradient(to right, rgba(55, 65, 81, 1), rgba(17, 24, 39, 1));
+}
+
+header li {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+}
+
+#search {
+    background-color: rgba(31, 41, 55, 0.6);
+    border: 1px solid rgba(31, 41, 55, 0.6);
+}
+
+#tags {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    text-align: center;
+    color: #fff;
+}
+
+address {
+    text-align: center;
+}
+
+address span {
+    font-family: Roboto, sans-serif;
+    line-height: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.author__name>span {
+    font-size: 16px;
+}
+
+.author__proff>span {
+    font-size: 14px;
+}
+
+.article__image {
+    text-align: center;
+}
+
+p {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.site_copyright {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    text-align: center;
+}

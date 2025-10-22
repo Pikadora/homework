@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
@@ -17,8 +18,8 @@
                 <li>Backend</li>
             </ul>
         </nav>
-        <div id="search__page">
-            <input id="search" />
+        <div class="search__input">
+            <input id="search" placeholder="Поиск" />
         </div>
     </header>
     <main>
@@ -33,14 +34,12 @@
             </div>
             <address>
                 <img src="./images/56d2936ddebdc3f275a19554e34f56b7ae22bd8b.png" alt="Аватар автора статьи" />
-                <span>Наталья Васильева</span>
-                <span>Разработчик</span>
+                <div class="author__name"><span>Наталья Васильева</span></div>
+                <div class="author__proff"><span>Разработчик</span></div>
             </address>
             <div id="content">
-                <figure>
-                    <img src="./images/8cefa35e4f3f91ff718dae25d01f84692996a2cd.png"
-                        alt="Картинка монитора с рабочим столом" />
-                    <figcaption>Монитор</figcaption>
+                <figure class="article__image">
+                    <img src="./images/Rectangle 181.png" alt="Картинка монитора с рабочим столом" />
                 </figure>
                 <figure>
                     <p>
