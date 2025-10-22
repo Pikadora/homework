@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(45deg, rgba(255, 165, 165, 1), rgba(253, 197, 197, 1), rgba(242, 152, 222, 0))
+}
+
+main {
+    background-color: #FFFFFF
+}
+
+h1 {
+    color: #000000;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label,
+span {
+    color: #666666;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    background-color: #089FE0;
+    color: #00000;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    color: #666666;
+    font-size: 16px;
+    line-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F5F5F5;
+}
