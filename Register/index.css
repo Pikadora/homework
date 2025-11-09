@@ -9,6 +9,8 @@ main {
     margin: 225px auto;
     display: flex;
     flex-flow: column;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 h1 {
@@ -56,13 +58,17 @@ form {
     display: flex;
     flex-flow: column;
     margin: 75px auto;
+    row-gap: 21px;
+}
+
+.regist-btn {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .conditions-container {
-    margin: 22px auto;
+    margin: 21px auto;
 }
-
-.conditions-container input {}
 
 .company-input {
     background-color: #fff;
@@ -80,6 +86,10 @@ form {
     border: 1px solid #fff;
     column-gap: 22px;
     width: 400px;
+}
+
+.person__data-input::placeholder {
+    font-style: italic;
 }
 
 .person__fio-container .person__data-input {
