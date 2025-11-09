@@ -3,15 +3,23 @@ body {
 }
 
 main {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    width: 585px;
+    height: 575px;
+    margin: 225px auto;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
 }
 
 h1 {
     color: #000000;
     font-weight: bold;
     font-size: 36px;
-    line-height: 100%;
+    line-height: 40px;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 72px auto 0px;
 }
 
 label,
@@ -24,17 +32,75 @@ span {
 
 button {
     background-color: #089FE0;
-    color: #00000;
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: none;
+    height: 45px;
 }
 
-input {
-    color: #666666;
+button>span {
+    color: #FFFFFF;
+}
+
+input[type="text"],
+input[type="email"] {
     font-size: 16px;
     line-height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    height: 45px;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    margin: 75px auto;
+    row-gap: 21px;
+}
+
+.regist-btn {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.conditions-container {
+    margin: 21px auto;
+}
+
+.company-input {
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    column-gap: 22px;
+    width: 400px;
+}
+
+.person__data-input {
     background-color: #F5F5F5;
+    color: #666666;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    column-gap: 22px;
+    width: 400px;
+}
+
+.person__data-input::placeholder {
+    font-style: italic;
+}
+
+.person__fio-container .person__data-input {
+    width: 200px !important;
+}
+
+.person__fio-container {
+    display: flex;
+    flex-flow: row;
+}
+
+.account-a {
+    margin: 0px auto;
 }

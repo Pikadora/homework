@@ -11,25 +11,29 @@
 <body>
     <main>
         <h1>Регистрация</h1>
-        <div>
+        <div class="account-a">
             <span>Уже есть аккаунт?</span>
             <a href="#" target="_blank">Войти</a>
         </div>
 
         <form action="#">
             <div>
-                <input type="text" id="company" name="company" placeholder="Моя компания" value="Моя компания" />
+                <input class="company-input" type="text" id="company" name="company" placeholder="Моя компания"
+                    value="Моя компания" />
+            </div>
+            <div class="person__fio-container">
+                <input class="person__data-input" type="text" id="firstname" name="firstname" placeholder="Имя" />
+                <input class="person__data-input" type="text" id="surname" name="surname" placeholder="Фамилия" />
             </div>
             <div>
-                <input type="text" id="name" name="name" placeholder="Имя" />
-                <input type="text" id="surname" name="surname" placeholder="Фамилия" />
+                <input class=" person__data-input" type="email" id="email" name="email" placeholder="E-mail" />
             </div>
-            <div>
-                <input type="email" id="email" name="email" placeholder="E-mail" />
-            </div>
-            <button>Зарегистрироваться</button>
-            <div>
-                <input type="radio" name="conditions" id="read">
+            <button class="regist-btn">
+                <span>Зарегистрироваться</span>
+                <img src="./images/Arrow 1.png" />
+            </button>
+            <div class="conditions-container">
+                <input type="checkbox" name="conditions" id="read">
                 <label for="read">Я прочитал и принимаю</label>
                 <a href="#" target="_blank">Условия использования</a>
             </div>
