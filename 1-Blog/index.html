@@ -18,8 +18,8 @@
                 <li>Backend</li>
             </ul>
         </nav>
-        <div class="search__input">
-            <input id="search" placeholder="Поиск" />
+        <div class="search__input-container">
+            <input class="search__input" id="search" placeholder="Поиск" />
         </div>
     </header>
     <main>
@@ -30,18 +30,20 @@
                 <time datetime="2024-05-12">12 мая 2024</time>
             </div>
             <div id="articleTitle">
-                <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
+                <h1>Теория цвета - Как цвет влияет на поведение<br /> потребителей</h1>
             </div>
             <address>
-                <img src="./images/56d2936ddebdc3f275a19554e34f56b7ae22bd8b.png" alt="Аватар автора статьи" />
-                <div class="author__name"><span>Наталья Васильева</span></div>
-                <div class="author__proff"><span>Разработчик</span></div>
+                <div class="avatar__container"></div>
+                <div class="author__container">
+                    <div class="author__name"><span>Наталья Васильева</span></div>
+                    <div class="author__proff"><span>Разработчик</span></div>
+                </div>
             </address>
             <div id="content">
                 <figure class="article__image">
                     <img src="./images/Rectangle 181.png" alt="Картинка монитора с рабочим столом" />
                 </figure>
-                <figure>
+                <figure class="article__text-container">
                     <p>
                         Теория цвета — это особенности эмоционального восприятия человеком тех или иных
                         цветовых решений. Цвета и различные их

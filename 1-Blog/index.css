@@ -1,11 +1,19 @@
-/*единую систему отступов (например, кратные 8px или 4px) для более консистентного дизайна*/
-
 body {
     background-image: linear-gradient(to right, rgba(55, 65, 81, 1), rgba(17, 24, 39, 1));
 }
 
 header {
     padding: 0px 80px;
+    display: flex;
+    margin: 0px 180px
+}
+
+nav {
+    flex-grow: 2;
+}
+
+nav ul {
+    display: flex;
 }
 
 nav li {
@@ -17,6 +25,7 @@ nav li {
     list-style: none;
     padding: 21px;
 }
+
 
 nav li:first-child {
     font-size: 16px;
@@ -33,14 +42,11 @@ h1 {
     color: #fff;
 }
 
-address {
-    text-align: center;
-}
-
 address span {
     font-family: Roboto, sans-serif;
     line-height: 28px;
     font-weight: 400;
+    font-style: normal;
     color: #fff;
 }
 
@@ -54,6 +60,9 @@ p {
 
 address {
     margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    row-gap: 16px;
 }
 
 figure+figure {
@@ -75,6 +84,7 @@ footer>span {
     border-radius: 100px;
     width: 224px;
     height: 40px;
+    margin: 21px;
 }
 
 #search::placeholder {
@@ -94,14 +104,21 @@ footer>span {
     text-align: center;
 }
 
+.author__container {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 16px;
+}
+
 .author__name>span {
     font-size: 16px;
-    height: 40px;
-    width: 224px;
+    line-height: 28px;
 }
 
 .author__proff>span {
     font-size: 14px;
+    line-height: 28px;
+    opacity: 60%;
 }
 
 .articleTitle {
@@ -119,4 +136,19 @@ footer>span {
     line-height: 28px;
     color: #fff;
     text-align: center;
+}
+
+.avatar__container {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    background-image: url(./images/56d2936ddebdc3f275a19554e34f56b7ae22bd8b.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.article__text-container {
+    max-width: 710px;
+    margin: 0 auto
 }
