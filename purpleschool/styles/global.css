@@ -1,5 +1,6 @@
 :root {
     --color-primary: #6c38CC;
+    --color-primary-hover: #5b2bb2;
     --color-bg: #16171D;
     --color-bg-medium: #1E1F29;
     --color-bg-light: #2E2D3D;
@@ -8,6 +9,10 @@
     --color-stroke: #4D5064;
 
     --border-radius-8: 8px;
+    --border-radius-10: 10px;
+    --layout-width: 1172px;
+
+    --gradient-text: linear-gradient(93.33deg, #D77BE6 9.26%, #BE63E6 42.32%, #6C36CC 104.58%);
 }
 
 body {
