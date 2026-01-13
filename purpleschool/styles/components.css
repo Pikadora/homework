@@ -5,6 +5,13 @@
     margin: 0 auto;
 }
 
+.section__wrapper {
+    max-width: var(--layout-width);
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
 /* Button*/
 
 .button {
@@ -17,6 +24,8 @@
     line-height: 120%;
     border-radius: var(--border-radius-10);
     cursor: pointer;
+    display: inline-block;
+    text-align: center;
 }
 
 .button_primary {
@@ -32,11 +41,135 @@
 }
 
 .button_ghost:hover {
-    background: var(--color-bg-medium);
+    background: var(--color-bg-light);
 }
+
 
 @media (max-width:640px) {
     .button {
         padding: 12px 32px;
     }
+}
+
+/*social-icons*/
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.social-icons-icon {
+    border: 1px solid var(--color-stroke);
+    border-radius: var(--border-radius-8);
+    text-decoration: none;
+    padding: 11px;
+    width: 48px;
+    height: 48px;
+}
+
+.social-icons-icon:hover {
+    background-color: var(--color-bg-medium);
+}
+
+/*section*/
+
+.section .social-icons {
+    margin-bottom: 32px;
+}
+
+.hashtag {
+    color: var(--color-secondary);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 8px;
+}
+
+.section-header {
+    font-weight: 400;
+    font-size: 46px;
+    line-height: 120%;
+    color: var(--color-text);
+    padding: 0px;
+    margin-bottom: 0 0 32px 0;
+}
+
+@media (max-width:860px) {
+
+    .section-header {
+        font-size: 34px;
+        line-height: 120%;
+    }
+}
+
+/*paragraph*/
+
+.paragraph {
+    color: var(--color-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 32px;
+    max-width: 787px;
+}
+
+.paragraph_32 {
+    margin-bottom: 32px;
+}
+
+/*post*/
+.post-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin-bottom: 48px;
+}
+
+.post__info {
+    display: flex;
+    gap: 32px;
+}
+
+.post__stat {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--color-link-hover);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.post__header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin: 12px 0px;
+    color: var(--color-text);
+}
+
+.post__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--color-text);
+}
+
+@media (max-width:860px) {
+    .post__header {
+        font-size: 21px;
+    }
+}
+
+
+/*card*/
+
+.card {
+    background-color: var(--color-bg-medium);
+    border-radius: var(--border-radius-10);
+}
+
+.card__32 {
+    padding: 32px;
 }
