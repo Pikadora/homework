@@ -155,3 +155,14 @@
 .button-special {
     color: var(--color-link-hover);
 }
+
+@media(max-width:1110px) {
+
+    .articles {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: repeat(auto-fit, min-max(328px, 1fr));
+        margin: 40px 24px;
+    }
+
+}
