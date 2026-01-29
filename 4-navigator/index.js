@@ -11,7 +11,7 @@ let Lat = toRad(positionLat - addressLat);
 let Long = toRad(positionLong - addressLong);
 
 
-let a = Math.sin(Lat/2)*Math.sin(Lat/2) + Math.cos(addressLat)*Math.cos(positionLat)*Math.sin(Long/2)*Math.sin(Long/2);
+let a = Math.sin(Lat/2)*Math.sin(Lat/2) + Math.cos(toRad(addressLat))*Math.cos(toRad(positionLat))*Math.sin(Long/2)*Math.sin(Long/2);
 let c = 2* Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
 
 const distance = R * c;
