@@ -4,7 +4,7 @@ function convertTo(sum,currency1, currency2){
         return sum/curs;
     }
     else{
-        console.log("Не умею")
+        return null;
     }
 }
 
