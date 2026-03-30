@@ -7,7 +7,7 @@ function filterDate (array) {
     })
     .map(el => {
             let date = new Date(el);
-            return date.toLocaleString('ru-RU').split(",")[0].toString();
+            return date.toLocaleString('ru-RU').split(",")[0].toString().replaceAll('.', '-');
     });
 }
 
